@@ -221,3 +221,65 @@ a{
             width: 80%;
         }
     }
+
+    .cuerpoa{    
+    background-color: rgb(40, 66, 138);
+}
+
+    .alquilar-header{
+        font-family: var(--ff-text);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(39, 39, 75);
+        padding-inline: 2rem;
+}  
+ 
+    .logo-alquilar{
+        max-width: 5rem;
+    }
+
+    .cuerpov{
+    background-color: rgb(40, 66, 138);
+    }
+
+    
+ 
+    .headerv{
+        font-family: var(--ff-text);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(39, 39, 75);
+        padding-inline: 2rem;
+    
+}
+
+
+.logov{
+    max-width: 5rem;
+}
+
+.navegadorv{
+    display:flex;
+    gap: 2rem;
+}
+
+.vender{ 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center ;
+    }
+
+    .formulario{
+        display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas: 
+     "nombre email"
+     "telefono direccion";
+     padding-top: 2rem;
+     width: 36rem;
+     gap: 1rem;
+    }
