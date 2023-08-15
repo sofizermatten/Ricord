@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2? family= Nunito:wght@200 & family= Rubik:ital,wght@0,400;1,500 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff--title: "Nunito", sans-serif;
+  --ff-text: "Rubik", sans-serif;
+  --clr-blue: 13293D ;
+}
+
+.body {
+  font-family: var(--ff-text);
+  background-color: rgb(40, 66, 138);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 39, 75);
+  padding-inline: 2rem;
+}
+.main-header .logo {
+  max-width: 5rem;
+}
+.main-header .navegador {
+  display: flex;
+  gap: 2rem;
+}
+
+.container {
+  background-color: rgb(34, 34, 71);
+  height: 100px;
+  width: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 250px;
+}
+
+.titulo {
+  color: aliceblue;
+  font-weight: 700;
+}
+
+.piedepagina {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 39, 75);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.piedepagina .logo2 {
+  max-width: 5rem;
+}
+
+.header {
+  font-family: var(--ff-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 39, 75);
+  padding-inline: 2rem;
+}
+.header .logo_con {
+  max-width: 5rem;
+}
+.header .navegador_con {
+  display: flex;
+  gap: 2rem;
+}
+
+.cuerpo {
+  background-color: rgb(40, 66, 138);
+}
+
+.main_con {
+  display: flex;
+}
+
+.contacto h1 {
+  font-family: var(--ff-text);
+  font-weight: 400rem;
+  font-size: 1.6rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.grid {
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item1  item2" "item1  item3";
+  gap: 1rem;
+}
+.grid .grid_item {
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+}
+.grid .grid_item1 h1 {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.grid .grid_item2 {
+  grid-area: item2;
+  background-image: url(../img/depto.jpg);
+}
+.grid .grid_item2 .grid_item2 h2 {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.grid .grid_item3 {
+  grid-area: item3;
+  background-image: url(../img/duplex.jpg);
+}
+.grid .grid_item3 .grid_item3 h3 {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.contactanos .contactanos_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "nombre email" "telefono direccion";
+  padding-top: 2rem;
+  width: 36rem;
+  gap: 1rem;
+}
+.contactanos .contactanos_form .contactanos_form input {
+  padding: 0.75rem;
+}
+.contactanos .contactanos_form .contactanos_form .nombre {
+  grid-area: nombre;
+}
+.contactanos .contactanos_form .contactanos_form .email {
+  grid-area: email;
+}
+.contactanos .contactanos_form .contactanos_form .number {
+  grid-area: telefono;
+}
+.contactanos .contactanos_form .contactanos_form .direccion {
+  grid-area: direccion;
+}
+
+@media screen and (max-width: 480px) {
+  .main-header {
+    flex-direction: column;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+  .grid_item {
+    flex: 1;
+  }
+  .contactanos {
+    padding: 2rem;
+  }
+  .contactanos_form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+.cuerpoa {
+  background-color: rgb(40, 66, 138);
+}
+
+.alquilar-header {
+  font-family: var(--ff-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 39, 75);
+  padding-inline: 2rem;
+}
+.alquilar-header .logo-alquilar {
+  max-width: 5rem;
+}
+
+.cuerpov {
+  background-color: rgb(40, 66, 138);
+}
+
+.headerv {
+  font-family: var(--ff-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 39, 75);
+  padding-inline: 2rem;
+}
+.headerv .logov {
+  max-width: 5rem;
+}
+.headerv .navegadorv {
+  display: flex;
+  gap: 2rem;
+}
+
+.vender {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "nombre email" "telefono direccion";
+  padding-top: 2rem;
+  width: 36rem;
+  gap: 1rem;
+}/*# sourceMappingURL=estilo.css.map */
