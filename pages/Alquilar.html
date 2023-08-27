@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    
+    <link rel="stylesheet" href="../scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
 <body class="cuerpoa">
@@ -15,11 +15,11 @@
     <nav class="menu"> 
         <div>
         <ul class="navegador">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="./pages/Comprar.html">Comprar</a></li>
-            <li class="nav-item"><a href="./pages/Vender.html">Vender</a></li>
-            <li class="nav-item"><a href="./pages/Alquilar.html">Alquilar</a></li>
-            <li class="nav-item"><a href="./pages/Contacto.html">Contacto</a></li>
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="./comprar.html">Comprar</a></li>
+            <li class="nav-item"><a href="./vender.html">Vender</a></li>
+            <li class="nav-item"><a href="./alquilar.html">Alquilar</a></li>
+            <li class="nav-item"><a href="./comprar.html">Contacto</a></li>
 
         </ul>
     </div>
@@ -27,41 +27,80 @@
 </header>
 <main>
 <section class="containerr fluid">
-    <div class="row">
-        <div class="col-3">
-       </div>
-       <div class="col-6">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/casa.jpg" class="d-block w-100" alt="logo">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/depto.jpg" class="d-block w-100" alt="logo">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/duplex.jpg" class="d-block w-100" alt="logo">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          </div>
-          <div class="col-3">
-        </div>
+  <div style="display: flex; flex-direction: row; justify-content: space-between; margin: 50px; margin-top: 15px;">
+    <div class="card" style="width: 18rem;">
+      <img src="../img/barrio el aljibe.jpeg" class="card-img-top" alt="casa 1" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Barrio Privado El Aljibe, Manzanares</h5>
+        <p class="card-text">Única Planta: Amplio living comedor, cocina, integrada,toilette y lavadero. 3 dormitorios uno en suite con vestidor y otros dos dormitorios con baño compartido completo.</p>
+      </div>
+      <div class="card-body">
+        <a href="../pages/contacto.html" class="card-link">contactanos</a>
+      </div>
     </div>
-
+    <div class="card" style="width: 18rem;">
+    <img src="../img/barrio la cañada2.jpeg" class="card-img-top" alt="casa 2" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Barrio La Cañada, Pilar</h5>
+        <p class="card-text">Divina casa desarrollada en una planta ubicada sobre un espectacular lote central.
+          Funcional con 3 habitaciones una de ella en suite, las otras dos con baño compartido.
+          Cocina integrada con living comedor y toilette.
+          Galeria con parrilla.</p>
+      </div>
+      <div class="card-body">
+        <a href="../pages/contacto.html" class="card-link">contactanos</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="../img/barrio san ramon2.jpeg" class="card-img-top" alt="casa 3" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Barrio San Ramon, Pilar del Este</h5>
+        <p class="card-text">Única Planta: Amplio living comedor, cocina, toilette, lavadero. 2 baños, 3 dormitorios uno en suite con vestidor y otros dos dormitorios con baño compartido. Amplia galería con parrilla.</p>
+      </div>
+      <div class="card-body">
+        <a href="../pages/contacto.html" class="card-link">contactanos</a>
+      </div>
+    </div>
+  </div>  
+  <div style="display:flex; flex-direction: row; justify-content: space-between; margin: 50px; margin-top: 15px;">
+    <div class="card" style="width: 18rem;">
+      <img src="../img/barrio santa emilia.jpeg" class="card-img-top" alt="casa 4" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Barrio Santa emilia, Pilar del Este</h5>
+        <p class="card-text">Única Planta: Amplio living comedor luminoso, cocina, toilette, 2 baños, 3 dormitorios uno en suite con vestidor y otros dos dormitorios con baño compartido.</p>
+      </div>
+      <div class="card-body">
+        <a href="../pages/contacto.html" class="card-link">contactanos</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="../img/barrio santa elena2.jpeg" class="card-img-top" alt="casa 5" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Barrio Santa Elena, Pilar del Este</h5>
+        <p class="card-text">Única Planta: Amplio living comedor luminoso, cocina semi-integrada, toilette y lavadero con doble acceso. 3 dormitorios uno de ellos en suite con vestidor y los otros dos con placard y baño compartido.</p>
+      </div>
+      <div class="card-body">
+        <a href="../pages/contacto.html" class="card-link">Contactanos</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="../img/barri san ramiro.jpeg" class="card-img-top" alt="casa 6" style="width: auto;">
+      <div class="card-body">
+        <h5 class="card-title">Barrio San Ramiro, Pilar del Este</h5>
+        <p class="card-text">Desarrollada en una planta que cuenta con: Hall de entrada, living comedor,
+          Gran ventanal con salida a la galería, toillete, cocina semi integrada,
+          Barra para desayunar y lavadero integrado.
+          3 dormitorios (uno en suite con vestidor y los otros dos con baño completo)</p>
+      </div>
+      <div class="card-body">
+        <a href="../pages/contacto.html" class="card-link">contactanos</a>
+      </div>
+    </div>
+  </div>
+<div>
 </section>
-
 </main>
-<footer>
-    
+<footer class="piedepag2">
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>

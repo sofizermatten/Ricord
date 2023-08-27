@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Nunito:wght@200 & family= Rubik:ital,wght@0,400;1,500 & display=swap');
-
+@import url('https://fonts.googleapis.com/css2? family= Nunito:wght@200 & family= Rubik:ital,wght@0,400;1,500 & family= Titan+One & display=swap' );
 *{
     margin: 0;
     padding:0;
@@ -114,50 +114,9 @@ a{
 }
 
 
-.grid{
- padding: 6rem;
- display: grid;
- grid-template-columns: 1fr 1fr;
- grid-template-rows: 1fr 1fr;
- grid-template-areas: 
- "item1  item2"
- "item1  item3";
- gap: 1rem;
-}
 
-.grid_item{
-    border-radius: 1rem;
-    background-size: cover ;
-    background-position: center center;
-}
-.grid_item1{
-    grid-area: item1;
-    background-image: url(../img/casa.jpg);
-    height: 300px;
-}
- 
-.grid_item1 h1{
- padding-left: 2rem;
- padding-top: 1rem;
-}
-.grid_item2{
-    grid-area: item2;
-    background-image: url(../img/depto.jpg);
-}
 
-.grid_item2 h2{
-    padding-left: 2rem;
-    padding-top: 1rem;
-   }
-.grid_item3{
-    grid-area: item3;
-    background-image: url(../img/duplex.jpg);
-}
 
-.grid_item3 h3{
-    padding-left: 2rem;
-    padding-top: 1rem;
-   }
 
    .contactanos{
     display: flex;
@@ -246,13 +205,13 @@ a{
     
  
     .headerv{
-        font-family: var(--ff-text);
+      
+   font-family: var(--ff-text);
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: rgb(39, 39, 75);
         padding-inline: 2rem;
-    
 }
 
 
@@ -273,13 +232,31 @@ a{
     }
 
     .formulario{
-        display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
-     grid-template-areas: 
-     "nombre email"
-     "telefono direccion";
+    display: grid;
      padding-top: 2rem;
      width: 36rem;
      gap: 1rem;
+    }
+
+
+    .cuerpoComprar{
+        background-color:rgb(40, 66, 138);
+    }
+
+    .headerComprar{
+        font-family: var(--ff-text);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(39, 39, 75);
+        padding-inline: 2rem; 
+    }
+
+    .logo_com{
+        max-width: 5rem;
+    }
+
+    .navegador_com{
+        display: flex;
+        gap: 2rem;
     }
